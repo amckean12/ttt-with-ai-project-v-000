@@ -40,4 +40,8 @@ class Game
     input = current_player.move(board)
     @board.valid_move?(input) ? @board.update(input, current_player) && @board.display : turn
   end
+
+  def play 
+  end 
+  
 end
