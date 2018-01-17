@@ -43,7 +43,7 @@ class Game
 
   def play
     self.turn until over?
-    won? ? puts "Congratulations #{winner}!" : puts "Cat's Game!"
+    won? ? (puts "Congratulations #{winner}!") : (puts "Cat's Game!")
   end
-  
+
 end
