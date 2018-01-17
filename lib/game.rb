@@ -41,7 +41,9 @@ class Game
     @board.valid_move?(input) ? @board.update(input, current_player) && @board.display : turn
   end
 
-  def play 
-  end 
+  def play
+    self.turn until over?
+    won? ? puts "Congratulations #{winner}!" : puts "Cat's Game!"
+  end
   
 end
